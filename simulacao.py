@@ -11,10 +11,10 @@ combustivel_max              = 25
 tempo_pouso_decolagem        = 40
 
 # Quantidades dos elementos de um aeroporto
-quant_pistas                 = 10
-quant_portoes                = 10
-quant_esteiras               = 7
-quant_max_avioes_por_esteira = 5
+quant_pistas                 = 4
+quant_portoes                = 8
+quant_esteiras               = 2
+quant_max_avioes_por_esteira = 3
 
 # Tempos das bagagens
 tempo_descarregar_bagagens   = 90
@@ -89,31 +89,31 @@ def ler_argumentos(argv):
             )
             sys.exit()
         elif opt == "--aviao-min":
-            novo_aviao_min = arg
+            novo_aviao_min = int(arg)
         elif opt == "--aviao-max":
-            novo_aviao_max = arg
+            novo_aviao_max = int(arg)
         elif opt == "--comb-min":
-            combustivel_min = arg
+            combustivel_min = int(arg)
         elif opt == "--comb-max":
-            combustivel_max = arg
+            combustivel_max = int(arg)
         elif opt == "--pouso":
-            tempo_pouso_decolagem = arg
+            tempo_pouso_decolagem = int(arg)
         elif opt == "--pistas":
-            quant_pistas = arg
+            quant_pistas = int(arg)
         elif opt == "--portoes":
-            quant_portoes = arg
+            quant_portoes = int(arg)
         elif opt == "--esteiras":
-            quant_esteiras = arg
+            quant_esteiras = int(arg)
         elif opt == "--max-avioes-esteiras":
-            quant_esteiras = arg
+            quant_esteiras = int(arg)
         elif opt == "--descarregar":
-            tempo_descarregar_bagagens = arg
+            tempo_descarregar_bagagens = int(arg)
         elif opt == "--carregar":
-            tempo_carregar_bagagens = arg
+            tempo_carregar_bagagens = int(arg)
         elif opt == "--bagagens":
-            tempo_bagagens_esteira = arg
+            tempo_bagagens_esteira = int(arg)
         elif opt == "--total":
-            tempo_total = arg
+            tempo_total = int(arg)
 
     print('===================================================================')
     print('[sim] Parâmetros da simulação:')
